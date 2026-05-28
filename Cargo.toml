@@ -1,0 +1,79 @@
+[package]
+name = "pump-trade-sdk"
+version = "0.1.0"
+edition = "2021"
+
+[features]
+default = []
+perf-trace = []
+
+[dependencies]
+solana-sdk = "3.0.0"
+solana-client = "3.1.9"
+solana-program = "3.0.0"
+solana-rpc-client = "3.1.9"
+solana-rpc-client-api = "3.1.9"
+solana-transaction-status = "3.1.9"
+solana-account-decoder = "3.1.9"
+solana-hash = "3.0.0"
+solana-entry = "3.1.9"
+solana-rpc-client-nonce-utils = "3.1.9"
+solana-perf = "3.1.9"
+solana-metrics = "3.1.9"
+solana-nonce = "3.1.0"
+solana-address-lookup-table-interface = "3.0.1"
+solana-compute-budget-interface = "3.0.0"
+solana-commitment-config = { version = "3.1.1", features = ["serde"] }
+solana-transaction-status-client-types = "3.1.9"
+solana-tls-utils = "3.1.9"
+solana-system-interface = { version = "2.0.0", features = ["bincode"] }
+
+borsh = { version = "1.5.3", features = ["derive"] }
+isahc = "1.7.2"
+serde = { version = "1.0.215", features = ["derive"] }
+serde_json = "1.0.134"
+futures = "0.3.31"
+futures-util = "0.3.31"
+base64 = "0.22.1"
+bs58 = "0.5.1"
+rand = "0.9.0"
+bincode = "1.3.3"
+anyhow = "1.0.90"
+reqwest = { version = "0.12.12", features = ["json", "multipart"] }
+tokio = { version = "1.42.0", features = ["full", "rt-multi-thread"] }
+tonic = { version = "0.14.2", features = ["transport"] }
+rustls = { version = "0.23.23", features = ["ring"] }
+rustls-native-certs = "0.8.1"
+tokio-rustls = "0.26.1"
+core_affinity = "0.8"
+chrono = "0.4.39"
+regex = "1"
+tracing = "0.1.41"
+thiserror = "2.0.11"
+async-trait = "0.1.86"
+lazy_static = "1.5.0"
+once_cell = "1.20.3"
+prost = "0.14.1"
+prost-types = "0.14.1"
+num_enum = "0.7.3"
+num-derive = "0.4.2"
+num-traits = "0.2.19"
+hex = "0.4.3"
+bytemuck = { version = "1.4.0" }
+arrayref = "0.3.6"
+borsh-derive = "1.5.5"
+indicatif = "0.18.0"
+fnv = "1.0.7"
+dashmap = "6.1.0"
+clru = "0.6"
+smallvec = "1.15.1"
+parking_lot = "0.12"
+arc-swap = "1.7"
+sha2 = "0.10"
+tonic-prost = "0.14.2"
+quinn = { version = "0.11", default-features = false, features = ["rustls"] }
+crossbeam-queue = "0.3"
+crossbeam-utils = "0.8"
+memmap2 = "0.9"
+num_cpus = "1.16"
+libc = "0.2"
